@@ -351,7 +351,7 @@ footer p:nth-child(2){
 	}
 	.logo{
 		color: rgb(2, 2, 2);
-		font-size: 45px;
+		font-size: 9.8vw;
 		letter-spacing: 1px;
 		cursor: pointer;
 	}
@@ -518,7 +518,7 @@ footer p:nth-child(2){
 		text-align: center;
 	}
 	.card i{
-		font-size: 50px;
+		font-size: 10vw;
 		display: block;
 		text-align: center;
 		margin: 25px 0px;
@@ -527,12 +527,12 @@ footer p:nth-child(2){
 	}
 	h5{
 		color: white;
-		font-size: 23px;
+		font-size: 5vw;
 		margin-bottom: 15px;
 	}
 	.pra p{
 		color: #fcfc;
-		font-size: 16px;
+		font-size: 3.8vw;
 		line-height: 27px;
 		margin-bottom: 25px;
 	}
