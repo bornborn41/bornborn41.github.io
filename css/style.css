@@ -363,7 +363,7 @@ footer p:nth-child(2){
 	}
 
 	.btn{
-		position:absolute;
+		position:relative;
 		background-color:rgba(20, 37, 107, 1);
 		color: white;
 		text-decoration: none;
@@ -372,14 +372,14 @@ footer p:nth-child(2){
 		padding: 10px 25px;
 		border-radius: 30px;
 		transition: transform .4s; 
-		top: 78%;
+		
 	}
 	.btn:hover{
 		transform: scale(1.2);
 	}
 	.content{
 		position: absolute;
-		top: 45%;
+		top: 55%;
 		left:8%;
 		transform: translateY(-50%);
 	}
