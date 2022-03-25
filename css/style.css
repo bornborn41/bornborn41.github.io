@@ -318,8 +318,106 @@ footer p:nth-child(2){
 	bottom: 35px;
 	font-size: 14px; 
 }
+.container{
+	display: none;
+}
 
 @media only screen and (max-width: 600px) {
+	.container{
+		position: fixed;
+		z-index: 1;
+		bottom:  50px;
+		right: 40px;
+		display: inline;
+	  }
+	  .container input{
+		display: none;
+	  }
+	  .container label{
+		position: relative;
+		width: 50px;
+		height: 50px;
+		background: rgba(20, 37, 107, 1);
+		border-radius: 50%;
+		display: block;
+		margin-left: 20px;
+		margin-top: 20px;
+		cursor: pointer;
+		transform: rotate(0deg);
+		transition:all 300ms ease-in-out;
+	  }
+	  .container label:before,
+	  .container label:after {
+		content:"";
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		width: 3px;
+		height: 30px;
+		background:#ffffff;
+	  }
+	  .container label:before {
+		transform:translate(-50%, -50%);
+	  }
+	  .container label:after {
+		transform:translate(-50%, -50%) rotate(90deg);
+	  }
+	  
+	  .container .nav {
+		
+		position: absolute;
+		bottom: 0;
+		opacity: 0;
+		right:  100vw;
+		width: 200px;
+		z-index: 1;
+		padding: 10px 0px 10px;
+		border-radius:  20px; 
+		margin-right: 100px;
+		box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.02);
+		transition: right 0ms ease-in-out 300ms,
+					bottom 300ms ease-in-out,
+					opacity 300ms ease-in-out;
+	  
+	  }
+	  .container .nav a {
+		display: block;
+		text-decoration: none;
+		margin: 15px 10px;
+		border: 2px solid #eee;
+		border-radius: 10px;
+		text-align: start;
+		color: rgb(95, 95, 95);
+		font-size: 18px;
+		padding: 20px;
+		background-color: #fff;
+	  
+	  }
+	  .container .nav a i{
+		padding-right: 10px; 
+	  }
+	  
+	  
+	  
+	  
+	  .container #toggle-btn:checked ~ .nav{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		right: 0px;
+		top: 5px;
+		opacity: 1;
+		transition: right 0ms ease-in-out 0ms,
+					bottom 300ms ease-in-out,
+					opacity 300ms ease-in-out;
+	  }
+	  
+	  
+	  .container #toggle-btn:checked + label {
+		transform: rotate(135deg);
+	  
+	  }
+	  
 	.hero{
 		height: 100vh;
 		width: 100%;
@@ -356,7 +454,7 @@ footer p:nth-child(2){
 		cursor: pointer;
 	}
 	span{
-		color: rgba(20, 37, 107, 1)
+		color: rgba(20, 37, 107, 1);
 	}
 	nav ul li{
 		display: none;
@@ -379,7 +477,7 @@ footer p:nth-child(2){
 	}
 	.content{
 		position: absolute;
-		top: 55%;
+		top: 48%;
 		left:8%;
 		transform: translateY(-50%);
 	}
@@ -503,13 +601,13 @@ footer p:nth-child(2){
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		min-height: 400px;
+		min-height: 550px;
 		flex-direction: column !important;
 	}
 	.card{
 		height: 365px;
-		width: 335px;
-		padding: 20px 35px;
+		width: 345px;
+		padding: 20px 35px 35px 35px;
 		background: #202020;
 		border-radius: 20px;
 		margin: 15px;
