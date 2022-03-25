@@ -386,20 +386,20 @@ footer p:nth-child(2){
 	h1{
 		color: black;
 		margin: 20px 0px 20px;
-		font-size: 55px;
+		font-size: 10vw;
 	}
 	h3{
 		color: rgb(0, 0, 0);
-		font-size: 20px;
+		font-size: 5vw;
 		margin-bottom: 50px;
 	}
 	h4{
 		color: rgba(20, 37, 107, 1);
 		letter-spacing: 2px;
-		font-size: 15px;
+		font-size: 4vw;
 	}
 	.newslatter form{
-		width: 350px;
+		width: 85%;
 		max-width: 100%;
 		position: relative;
 	}
