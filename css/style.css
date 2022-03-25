@@ -21,7 +21,7 @@ nav{
 	padding-right: 8%;
 }
 .mobile-portfolio{
-	transform: scale(0);
+	display: none;
 }
 .logo{
 	color: rgb(2, 2, 2);
@@ -116,6 +116,7 @@ h4{
 .about img{
 	height: auto;
 	width: 250px;
+	order: 0;
 }
 .about-text{
 	width: 550px;
@@ -126,13 +127,23 @@ h4{
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
+	flex-direction: row;
+	gap: 50px;
 }
-.about-text h2{
+.main h2{
+	position:absolute;
 	color: white;
 	font-size: 75px;
 	text-transform: capitalize;
-	margin-bottom: 20px;
+	margin-bottom: 250px;
+	margin-left: 150px;
+	order: 1;
+
+}
+.about-text{
+	order: 1;
+	padding: 20vh 20px 20px;
 }
 .about-text h5{
 	color: white;
@@ -331,21 +342,16 @@ footer p:nth-child(2){
 	
 	}
 	.mobile-portfolio img{
-		position: absolute;
-		width: 250px;
-		margin: 20px 0px 20px;
-		position: absolute;
-		left: 8%;
-		top: 15%;
+		position: relative;
+		width: 150px;
+		margin: 20px 0px 40px;
 		border: 5px solid rgba(20, 37, 107, 1);
 		border-radius: 50%;
-		object-fit: cover;
-		
 		
 	}
 	.logo{
 		color: rgb(2, 2, 2);
-		font-size: 40px;
+		font-size: 45px;
 		letter-spacing: 1px;
 		cursor: pointer;
 	}
@@ -353,20 +359,9 @@ footer p:nth-child(2){
 		color: rgba(20, 37, 107, 1)
 	}
 	nav ul li{
-		list-style-type: none;
 		display: none;
-		padding: 10px  25px;
 	}
-	nav ul li a{
-		color: black;
-		text-decoration: none;
-		font-weight: bold;
-		text-transform: capitalize;
-	}
-	nav ul li a:hover{
-		color: rgba(20, 37, 107, 1);
-		transition: .4s;
-	}
+
 	.btn{
 		position:absolute;
 		background-color:rgba(20, 37, 107, 1);
@@ -377,14 +372,14 @@ footer p:nth-child(2){
 		padding: 10px 25px;
 		border-radius: 30px;
 		transition: transform .4s; 
-		bottom: 20%;
+		top: 78%;
 	}
 	.btn:hover{
 		transform: scale(1.2);
 	}
 	.content{
 		position: absolute;
-		top: 55%;
+		top: 45%;
 		left:8%;
 		transform: translateY(-50%);
 	}
@@ -416,48 +411,56 @@ footer p:nth-child(2){
 		outline: none;
 		border-radius: 30px;
 	}
-	.newslatter form input:last-child{
-		position: absolute;
-		display: inline-block;
-		outline: none;
-		border: none;
-		padding: 10px 30px;
-		border-radius: 30px;
-		background-color:rgba(20, 37, 107, 1);
-		color: white;
-		box-shadow: 0px 0px 5px rgb(14, 13, 13), 0px 0px 15px rgba(20, 37, 107, 1);
-		top: 6px;
-		right: 6px; 
-	}
+
+	
 	.about{
+		height: 100%;
 		width: 100%;
 		padding: 100px 0px;
-		background-color: #5d5d5d;
+		background-color: #202020;
 	}
 	.about img{
-		display: none;
+		height: auto;
+		width: 200px;
+		order: 1;
+		padding: 2px;
+		margin-bottom: 30px;
+		border-radius: 20px;
+		margin-top: 35px;
+
 	}
 	.about-text{
-		width: 300px;
+		width: 400px;
 	}
 	.main{
-		width: 1130px;
-		max-width: 95%;
+		width: 100%;
+		max-width: 90%;
 		margin: 0 auto;
 		display: flex;
 		align-items: center;
-		justify-content: space-around;
+		flex-direction: column;
+		gap: 0px !important;
+
 	}
-	.about-text h2{
+	.main h2{
+		position: relative !important;
 		color: white;
-		font-size: 55px;
+		font-size: 45px;
 		text-transform: capitalize;
-		margin-bottom: 20px;
+		margin-bottom: 10px !important;
+		order: 0;
+		margin-bottom: 250px;
+		margin-left: 0px  !important;
+	}
+	.about-text{
+		order: 2;
+		padding: 40px !important;
+		
 	}
 	.about-text h5{
 		color: white;
 		letter-spacing: 2px;
-		font-size: 18px;
+		font-size: 4vw;
 		margin-bottom: 25px;
 		text-transform: capitalize;
 	}
@@ -465,7 +468,7 @@ footer p:nth-child(2){
 		color: #fcfc;
 		letter-spacing: 1px;
 		line-height: 28px;
-		font-size: 12px;
+		font-size: 3vw;
 		margin-bottom: 45px;
 	}
 	button{
@@ -483,7 +486,7 @@ footer p:nth-child(2){
 		border: 2px solid rgba(20, 37, 107, 1);
 		cursor: pointer;
 	}
-	
+
 	.service{
 		background: #ffffff;
 		width: 100%;
@@ -496,47 +499,116 @@ footer p:nth-child(2){
 		margin: 30px auto;
 		text-align: center;
 	}
-
+	.box{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 400px;
+		flex-direction: column !important;
+	}
 	.card{
-	
-		padding: 10px 10px;
-		margin: 10px;
-	
+		height: 365px;
+		width: 335px;
+		padding: 20px 35px;
+		background: #202020;
+		border-radius: 20px;
+		margin: 15px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
 	}
 	.card i{
-		font-size: 30px;
-		margin: 20px 0px;
-		color: rgb(253, 253, 253);
+		font-size: 50px;
+		display: block;
+		text-align: center;
+		margin: 25px 0px;
+		color: rgba(20, 37, 107, 1);
+
 	}
 	h5{
-		font-size: 18px;
-		
+		color: white;
+		font-size: 23px;
+		margin-bottom: 15px;
 	}
 	.pra p{
-
-		font-size: 12px;
-		line-height: 24px;
+		color: #fcfc;
+		font-size: 16px;
+		line-height: 27px;
+		margin-bottom: 25px;
 	}
-
-
-	.contact-me p{
-		font-size: 20px;
-		
+	.card .button{
+		background-color:rgba(20, 37, 107, 1);
+		color: white;
+		text-decoration: none;
+		border: 2px solid transparent;
+		font-weight: bold;
+		padding: 9px 22px;
+		border-radius: 30px;
+		transition: .4s; 
 	}
-	
-
-	footer{
+	.card .button:hover{
+		background-color: transparent;
+		border: 2px solid rgba(20, 37, 107, 1);
+		cursor: pointer;
+	}
+	.contact-me{
 		width: 100%;
-
+		height: 290px;
+		background: #dfdfdf;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.contact-me p{
+		color: rgb(0, 0, 0);
+		font-size: 5vw;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	.contact-me .button-two{
+		background-color:rgba(20, 37, 107, 1);
+		color: white;
+		text-decoration: none;
+		border: 2px solid transparent;
+		font-weight: bold;
+		padding: 13px 30px;
+		border-radius: 30px;
+		transition: .4s; 
+	}
+	.contact-me .button-two:hover{
+		background-color: transparent;
+		border: 2px solid rgba(20, 37, 107, 1);
+		color: rgb(0, 0, 0);
+		cursor: pointer;
+	}
+	footer{
+		position: relative;
+		width: 100%;
+		height: 400px;
+		background: #202020;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 	}
 	footer p:nth-child(1){
-		font-size: 35px;
-	
+		font-size: 8vw;
+		color: white;
+		margin-bottom: 20px;
+		font-weight: bold;
 	}
 	footer p:nth-child(2){
-		font-size: 18px;
+		padding: 20px;
+		color: white;
+		font-size: 3.5vw;
+		width: 100%;
+		text-align: center;
+		line-height: 20px;
 	}
-
+	.social{
+		display: flex;
+	}
 	.social a{
 		width: 45px;
 		height: 45px;
@@ -548,10 +620,16 @@ footer p:nth-child(2){
 		margin: 22px 10px;
 		color: white;
 		text-decoration: none;
-		font-size: 25px;
+		font-size: 20px;
 	}
-	
+	.social a:hover{
+		transform: scale(1.3);
+		transition: .3s;
+	}
 	.end{
-		font-size: 12px; 
+		position: absolute;
+		color:rgba(20, 37, 107, 1);
+		bottom: 35px;
+		font-size: 14px; 
 	}
 }
