@@ -179,6 +179,9 @@ button:hover{
 	background: #ffffff;
 	width: 100%;
 	padding: 100px 0px;
+	padding-left: 50px;
+	padding-right: 50px
+
 }
 .title h2{
 	color: #202020;
@@ -189,38 +192,42 @@ button:hover{
 }
 .box{
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content:center;
+	align-items:center;
 	min-height: 400px;
+	gap:50px;
+	
+	
 }
 .card{
-	height: 365px;
-	width: 335px;
-	padding: 20px 35px;
+	display: grid;
 	background: #202020;
 	border-radius: 20px;
-	margin: 15px;
-	position: relative;
-	overflow: hidden;
 	text-align: center;
+	grid-row: auto auto auto;
+	padding:  20px 20px 20px 20px;
+	height: 400px;
+	width:335px;
+	position: relative;
 }
 .card i{
-	font-size: 50px;
+	font-size: 30px;
 	display: block;
 	text-align: center;
-	margin: 25px 0px;
-	color: rgba(20, 37, 107, 1);
+	color: rgb(255, 255, 255);
+	padding-bottom: 25px;
+	padding-top: 5px;
 
 }
 h5{
 	color: white;
-	font-size: 23px;
+	font-size: 20px;
 	margin-bottom: 15px;
 }
 .pra p{
 	color: #fcfc;
-	font-size: 16px;
-	line-height: 27px;
+	font-size: 18px;
+	line-height: 30px;
 	margin-bottom: 25px;
 }
 .card .button{
@@ -322,7 +329,7 @@ footer p:nth-child(2){
 	display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 945px) {
 	.container{
 		position: fixed;
 		z-index: 1;
@@ -512,23 +519,23 @@ footer p:nth-child(2){
 
 	
 	.about{
-		height: 100%;
+		height: 105vh;
 		width: 100%;
 		padding: 100px 0px;
 		background-color: #202020;
 	}
 	.about img{
 		height: auto;
-		width: 200px;
+		width: 100px;
 		order: 1;
 		padding: 2px;
-		margin-bottom: 30px;
 		border-radius: 20px;
-		margin-top: 35px;
+		
 
 	}
 	.about-text{
-		width: 400px;
+		width: 100%;
+		margin-top: 25px;
 	}
 	.main{
 		width: 100%;
@@ -543,7 +550,7 @@ footer p:nth-child(2){
 	.main h2{
 		position: relative !important;
 		color: white;
-		font-size: 45px;
+		font-size: 10vw;
 		text-transform: capitalize;
 		margin-bottom: 10px !important;
 		order: 0;
@@ -552,22 +559,22 @@ footer p:nth-child(2){
 	}
 	.about-text{
 		order: 2;
-		padding: 40px !important;
+		padding: 5px !important;
 		
 	}
 	.about-text h5{
 		color: white;
 		letter-spacing: 2px;
-		font-size: 4vw;
+		font-size: 3vw;
 		margin-bottom: 25px;
 		text-transform: capitalize;
 	}
 	.about-text p{
 		color: #fcfc;
 		letter-spacing: 1px;
-		line-height: 28px;
+		line-height: 25px;
 		font-size: 3vw;
-		margin-bottom: 45px;
+		margin-bottom: 25px;
 	}
 	button{
 		background-color:rgba(20, 37, 107, 1);
@@ -588,49 +595,49 @@ footer p:nth-child(2){
 	.service{
 		background: #ffffff;
 		width: 100%;
-		padding: 100px 0px;
+		
+		align-items: center;
+		justify-content:center;
+		flex-direction: column;
+	
 	}
 	.title h2{
 		color: #202020;
-		font-size: 45px;
+		font-size: 8vw;
 		width: 100%;
 		margin: 30px auto;
 		text-align: center;
 	}
 	.box{
 		display: flex;
-		justify-content: center;
-		align-items: center;
-		min-height: 550px;
+		justify-content:center;
+		align-items:center;
+		min-height: 500px;
+		gap:50px;
 		flex-direction: column !important;
+		
 	}
 	.card{
-		height: 365px;
-		width: 345px;
-		padding: 20px 35px 35px 35px;
-		background: #202020;
-		border-radius: 20px;
-		margin: 15px;
-		position: relative;
-		overflow: hidden;
-		text-align: center;
+		grid-template-rows: auto auto auto;
+		padding: 20px;
+		height: 400;
 	}
 	.card i{
-		font-size: 10vw;
+		font-size: 30px;
 		display: block;
 		text-align: center;
-		margin: 25px 0px;
-		color: rgba(20, 37, 107, 1);
-
+		color: rgb(255, 255, 255);
+		padding-bottom: 25px;
+	
 	}
 	h5{
 		color: white;
-		font-size: 5vw;
+		font-size: 25px;
 		margin-bottom: 15px;
 	}
 	.pra p{
 		color: #fcfc;
-		font-size: 3.8vw;
+		font-size:18px;
 		line-height: 27px;
 		margin-bottom: 25px;
 	}
@@ -691,7 +698,7 @@ footer p:nth-child(2){
 		justify-content: center;
 	}
 	footer p:nth-child(1){
-		font-size: 8vw;
+		font-size: 5vw;
 		color: white;
 		margin-bottom: 20px;
 		font-weight: bold;
@@ -699,7 +706,7 @@ footer p:nth-child(2){
 	footer p:nth-child(2){
 		padding: 20px;
 		color: white;
-		font-size: 3.5vw;
+		font-size: 2.5vw;
 		width: 100%;
 		text-align: center;
 		line-height: 20px;
