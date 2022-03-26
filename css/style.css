@@ -526,7 +526,7 @@ footer p:nth-child(2){
 	}
 	.about img{
 		height: auto;
-		width: 100px;
+		width: 95px;
 		order: 1;
 		padding: 2px;
 		border-radius: 20px;
@@ -540,11 +540,13 @@ footer p:nth-child(2){
 	.main{
 		width: 100%;
 		max-width: 90%;
-		margin: 0 auto;
 		display: flex;
 		align-items: center;
+		justify-content: center;
 		flex-direction: column;
-		gap: 0px !important;
+		gap: 10px !important;
+		position: relative;
+		
 
 	}
 	.main h2{
@@ -552,9 +554,8 @@ footer p:nth-child(2){
 		color: white;
 		font-size: 10vw;
 		text-transform: capitalize;
-		margin-bottom: 10px !important;
+		margin-bottom: 0% !important;
 		order: 0;
-		margin-bottom: 250px;
 		margin-left: 0px  !important;
 	}
 	.about-text{
@@ -565,18 +566,19 @@ footer p:nth-child(2){
 	.about-text h5{
 		color: white;
 		letter-spacing: 2px;
-		font-size: 3vw;
+		font-size: 18px;
 		margin-bottom: 25px;
 		text-transform: capitalize;
 	}
 	.about-text p{
 		color: #fcfc;
 		letter-spacing: 1px;
-		line-height: 25px;
-		font-size: 3vw;
+		line-height: 20px;
+		font-size: 15px;
 		margin-bottom: 25px;
 	}
 	button{
+		position: relative;
 		background-color:rgba(20, 37, 107, 1);
 		color: white;
 		text-decoration: none;
